@@ -31,7 +31,7 @@ if($_POST)
 <html>
 <body>
 
-<form action="index.php" method="post" enctype="multipart/form-data">
+<form action="/" method="post" enctype="multipart/form-data">
     Select GEO CSV to upload:
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload GEO CSV" name="submit">
