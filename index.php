@@ -23,6 +23,8 @@ if($_POST)
         'features'  => $feature
     );
     fclose($h);
+    header('Content-disposition:attachment;filename=geo.json');
+    header('Content-type:application/json');
     echo(json_encode($geojson));
     exit();
 }
