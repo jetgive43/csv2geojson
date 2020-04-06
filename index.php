@@ -12,7 +12,7 @@ if($_POST)
             'geometry' => array(
                 'type' => 'LineString',
                 # Pass Longitude and Latitude Columns here
-                'coordinates' => [[(float)$data[2],(float)$data[1]],[(float)$data[7],(float)$data[6]]]
+                'coordinates' => [[(float)$data[3],(float)$data[2]],[(float)$data[8],(float)$data[7]]]
             ),
             # Pass other attribute columns here
             'properties' => [''=>'']
