@@ -12,7 +12,7 @@ if($_POST)
             'geometry' => array(
                 'type' => 'LineString',
                 # Pass Longitude and Latitude Columns here
-                'coordinates' => [[(float)$data[1],(float)$data[2]],[(float)$data[6],(float)$data[7]]]
+                'coordinates' => [[(float)$data[2],(float)$data[1]],[(float)$data[7],(float)$data[6]]]
             ),
             # Pass other attribute columns here
             'properties' => [''=>'']
@@ -23,7 +23,7 @@ if($_POST)
         'features'  => $feature
     );
     fclose($h);
-    header('Content-disposition:attachment;filename=geo.json');
+    header('Content-disposition:attachment;filename=geo.geojson');
     header('Content-type:application/json');
     echo(json_encode($geojson));
     exit();
